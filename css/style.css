@@ -1,0 +1,330 @@
+/* 
+
+        Bootsrap Google Plus Style Theme from Bootply.com http://bootply.com/templates
+        https://github.com/iatek/bootstrap-google-plus
+        License: GPL
+        Target Version: Bootstrap 3.0.2
+
+*/
+
+/* to optimize performance load fonts from LINK in HEAD */
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+
+@font-face{ 
+    font-family: 'Lane';
+    src: url('fonts/LANENAR_-webfont.eot');
+    src: url('fonts/LANENAR_-webfont.eot?iefix') format('eot');
+}
+
+body{
+    height: 100%;
+    font-family: 'Lane', sans-serif;
+    font-weight: normal;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+
+}
+/* BASE */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+a{
+    color: #666;
+    font-family: 'Exo 2', sans-serif;
+}
+a:hover, a:active{
+    text-decoration: none;
+    color: #000;
+}
+/* Required */
+
+.hidden{
+    opacity: 0;
+}
+
+.visible{
+    opacity: 1;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+
+#header{
+    display: none;
+}
+#header.header-shrink{
+    display: block !important;
+
+}
+
+#nav {
+    width: 100%;
+    position:static;
+    top:-32px;
+    background: #fff;
+}
+.navbar{
+    margin-bottom: 0px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    z-index:9999;
+    -webkit-transition: all .6s ease-in-out;
+    border-bottom: 1px solid #e2e2e2;
+}
+.nav-justified{
+    width: auto;
+}
+.nav-justified > li{
+    width:auto;
+}
+.navbar-custom {
+    font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+    color: #333;
+    font-weight: lighter;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+    color: #fff;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+    background-color: #41cb88;
+    color: #fff;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+    border-top-color: #999;
+    border-bottom-color: #999;
+}
+
+.navbar-collapse.in { 
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+    outline:0;
+    border: 1px solid #000 !important;
+}
+.navbar-toggle .icon-bar{
+    background: #222;
+}
+.scroll-top {
+    position:fixed;
+    bottom:0;
+    right:6%;
+    z-index:100;
+    background: #f2f3f2;
+    font-size:24px;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+    color:#222;
+}
+/* Header */
+
+
+#page-preorder.bg-photo{
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	background-color: #41cb88;
+}
+
+
+#btn-nav-togle{
+    color: #fff;
+}
+.box-page{
+	color: #fff;
+	margin: 20px 30px 20px 0px;
+	padding-left: 30px;
+}
+.head-title{
+	padding: 50px 0px 80px 0px;
+	color: #fff;
+	text-align: center;
+}
+.head-title h1{
+	font-size: 10rem;
+}
+.head-title span{
+    color: #ECECFF;
+    font-weight: 600;
+}
+/******Services**********/
+#services{
+    background: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container-content{
+    width: 60%;
+}
+#services h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+#services i{
+    border: 10px solid;
+    padding: 40px;
+}
+#services i.fa-laptop{
+    color: #edc261;
+}
+#services i.fa-list{
+    color: #39c983;
+}
+#services i.fa-trophy{
+    color: #1e72c2;
+}
+#services i.fa-camera{
+    color: #41cb9c;
+}
+#services i.fa-folder-open{
+    color: #41cbb9;
+}
+#services i.fa-video-camera{
+    color: #41b3cb;
+}
+
+#services .row{
+    padding-top: 50px;
+}
+/*******What We Do*********/
+#what-we-do{
+    padding-top: 30px;
+}
+.what-head{
+    background: #41cb88;
+    height: 100px;
+    background-image: url("../img/v-bg.jpg");
+    text-align: center;
+    background-size: contain;
+}
+.what-head h1{
+    padding-top: 25px;
+    color: #fff;
+}
+#video-main{
+    position: relative;
+}
+.video-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 500px !important;
+    z-index: 0;
+}
+.video-background video {
+    min-width:100%; 
+    opacity: .8;
+}
+.ui-video-background {
+    position: absolute;
+    top: -70px;
+    right:0px;
+}
+.ui-video-background-controls {
+    margin: 0;
+    padding: 0 45px;
+    list-style: none;
+}
+.ui-video-background-controls li {
+    float: left;
+    padding: 5px;
+    padding-right: 30px;
+}
+
+.ui-icon.fa{
+    color: #fff;
+}
+/*******Team*********/
+#team{
+    padding: 80px 0px 50px 0px;
+    text-align: center;
+}
+
+#team h1{
+    padding-bottom: 70px;
+}
+#team h3{
+    color: #000;
+    font-weight: bold;
+}
+.team-member{
+    text-align: center;
+}
+.team-member span{
+    display: block;
+}
+.team-member a{
+    color: #41cb88;
+    font-size: 13px
+}
+.team-member img{
+    height: 220px;
+    width: 210px;
+    display: inline;
+}
+.btn-detail, .btn-detail:active:focus, .btn-detail:hover ,.btn-detail:focus{
+    border: none;
+    border-radius: 0px;
+    outline: 0px;
+    box-shadow: 0px;
+    padding: 15px;
+    width: 250px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    background: #41cb88;
+    color: #eee;
+}
+
+/*******Footer*********/
+#footer{
+	background: #41cb88;
+	padding: 50px 0px 20px 0px;
+	text-align: center;
+}
+#footer i{
+    color: #fff;
+}
+#footer h5{
+    color: #eee;
+}
+/*Media querry*/
+@media (max-width:767px) {
+
+    #services .container-content{
+        width: 100%;
+    }
+    .ui-video-background-controls{
+        padding: 0px;
+    }
+    .team-member img {
+        height: 190px;
+        width: 190px;
+        display: inline;
+    }
+    .ui-video-background-controls li{
+        padding-right: 10px;
+    }
+    .head-title h1{
+        font-size:6rem;
+    }
+}
