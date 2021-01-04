@@ -194,7 +194,7 @@ $.noConflict();
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 6000,
-                dots: true
+                dots: false
             });
         }
         //Simple Lightbox
